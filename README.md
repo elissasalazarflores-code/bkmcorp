@@ -8,13 +8,12 @@ python3 -m http.server 8000   # then open http://localhost:8000/
 
 ## Structure
 
-- `index.html` — Hero (office video) · Who we are · Problem we solve · Platform (Trade, Engine Capital, Operating Model) · Brand integration models · Mexico City hub · Contact · Footer. No key figures are published (internal information).
+- `index.html` — one page with the content of bkmcorp.com.mx: Home (hero) · About · Execution Platform · Our Philosophy · Services · Customer Success Stories · Contact. Copy is taken from the live site; the only figures shown are the public ones on Customer Success Stories and the “more than 15 years” line from Home.
 - `css/styles.css` — tokens from the BKM ID manual: gold `#A89613` (Pantone 104 C), charcoal `#1C1C22` (Pantone 4575 C), silver `#B9BFC5`.
 - `js/main.js` — sticky header, mobile menu, scroll reveals, contact form (opens a pre-filled email to contact@bkm.com.mx).
 - `assets/` — official BKM logo from the Logo Book SVG, unmodified: `bkm-logo.svg` (symbol + BUSINESS KEY MEDICAL) and `bkm-symbol.svg` (symbol only). Only the canvas background was removed and the viewBox cropped to the artwork; always size them by height with `width: auto`. Office video and stills from `BKM - Our offices - 2026.mp4`.
 
 ## Pending
 
-- Align every section's copy with bkmcorp.com.mx (the site could not be reached from the build environment).
-- Replace the footer LinkedIn search link with the company page URL.
+- The live site's footer email link points to `contact@bkmcorp.copm.mx` (typo); this site uses the address shown as text, `contact@bkm.com.mx`.
 - Connect the contact form to a form service or CRM if needed.

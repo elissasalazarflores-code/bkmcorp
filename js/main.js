@@ -92,24 +92,23 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var ok = true;
-      ['name', 'email', 'message'].forEach(function (n) {
+      ['first', 'email', 'message'].forEach(function (n) {
         var input = form.elements[n];
         var valid = input.value.trim() !== '' && (n !== 'email' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim()));
         input.closest('.field').classList.toggle('is-invalid', !valid);
         if (!valid) ok = false;
       });
       if (!ok) {
-        note.textContent = 'Please complete your name, a valid email and a short description of your project.';
+        note.textContent = 'Please add your first name, a valid email and your message.';
         return;
       }
       var f = form.elements;
-      var subject = 'Project inquiry · ' + f.profile.value + (f.company.value.trim() ? ' · ' + f.company.value.trim() : '');
+      var name = (f.first.value.trim() + ' ' + f.last.value.trim()).trim();
+      var subject = f.subject.value.trim() || 'Project inquiry · ' + name;
       var body = [
-        'Name: ' + f.name.value.trim(),
-        'Organization: ' + (f.company.value.trim() || '—'),
+        'Name: ' + name,
         'Email: ' + f.email.value.trim(),
         'Phone: ' + (f.phone.value.trim() || '—'),
-        'Profile: ' + f.profile.value,
         '',
         f.message.value.trim()
       ].join('\n');
