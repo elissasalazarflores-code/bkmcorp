@@ -54,7 +54,7 @@
     var parent = el.parentElement;
     var siblings = Array.prototype.filter.call(parent.children, function (c) { return c.classList.contains('reveal'); });
     var i = siblings.indexOf(el);
-    if (i > 0) el.style.setProperty('--d', Math.min(i * 0.09, 0.5) + 's');
+    if (i > 0) el.style.setProperty('--d', Math.min(i * 0.06, 0.24) + 's');
   });
 
   if ('IntersectionObserver' in window && !reduceMotion) {
@@ -64,7 +64,7 @@
         entry.target.classList.add('is-in');
         io.unobserve(entry.target);
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px -6% 0px' });
     Array.prototype.forEach.call(reveals, function (el) { io.observe(el); });
 
   } else {
