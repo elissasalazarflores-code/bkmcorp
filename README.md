@@ -17,3 +17,7 @@ python3 -m http.server 8000   # then open http://localhost:8000/
 
 - The live site's footer email link points to `contact@bkmcorp.copm.mx` (typo); this site uses the address shown as text, `contact@bkm.com.mx`.
 - Connect the contact form to a form service or CRM if needed.
+
+## Version 2 (`v2/`)
+
+Alternative design published at `/v2/` (GitHub Pages: `https://elissasalazarflores-code.github.io/bkmcorp/v2/`). Same content and assets (`../assets/`), compact layout with deep-navy highlights: hero with figures strip, services selector beside the three-engines diagram, lifecycle and success-stories panels, clinical-area cards, About tabs, values band and contact. Full service and engine copy opens on click to reduce visible text.
