@@ -76,6 +76,7 @@
   <div class="hero__bands" aria-hidden="true"><i></i><i></i><i></i></div>
 
   <div class="container hero__content">
+    <img class="hero__logo reveal" src="assets/bkm-logo.svg" alt="BKM – Business Key Medical" width="332" height="540">
     <p class="eyebrow reveal">Where vision meets execution.</p>
     <h1 class="hero__title reveal">
       <span class="line">Your Business Key</span>
@@ -247,62 +248,110 @@
 <!-- ============ SERVICES ============ -->
 <section class="section services" id="services">
   <div class="container">
-    <header class="section__head section__head--split reveal">
-      <div>
-        <p class="eyebrow">Services</p>
-        <h2 class="h2">One Operator. <em>Every Stage.</em></h2>
-      </div>
+    <header class="section__head section__head--center reveal">
+      <p class="eyebrow">Services</p>
+      <h2 class="h2">One Operator. <em>Every Stage.</em></h2>
       <p class="section__lead">From structuring to deployment to long-term operation, BKM covers the full lifecycle of medical technology projects in Mexico, without handoffs, without gaps.</p>
     </header>
 
-    <div class="svc-groups">
-      <div class="svc-group">
-        <h3 class="svc-group__title reveal">Execution &amp; Project Delivery</h3>
-        <ul class="svc-list">
-          <li class="svc reveal"><svg class="svc__icon" aria-hidden="true"><use href="#i-key"/></svg><div><h4>Turnkey Project Execution</h4><p>We take a project from concept to operational reality. That means structuring, procurement, installation, clinical commissioning, and handover – managed as a single end-to-end responsibility. You don’t coordinate multiple vendors. You coordinate BKM.</p></div></li>
-          <li class="svc reveal"><svg class="svc__icon" aria-hidden="true"><use href="#i-wrench"/></svg><div><h4>Medical Technology Lifecycle Management</h4><p>After deployment, the work continues. We provide scheduled maintenance, corrective service, spare parts access, and performance tracking for the equipment we deploy, so institutions aren’t left managing complex technology alone.</p></div></li>
-          <li class="svc reveal"><svg class="svc__icon" aria-hidden="true"><use href="#i-pulse"/></svg><div><h4>Digital Health &amp; AI Solutions</h4><p>Design and deployment of clinical software, AI-assisted diagnostic platforms, and integrated health information systems — built for Mexico’s institutional environment and regulatory framework.</p></div></li>
-        </ul>
-      </div>
-      <div class="svc-group">
-        <h3 class="svc-group__title reveal">Market Access &amp; Commercialization</h3>
-        <ul class="svc-list">
-          <li class="svc reveal"><svg class="svc__icon" aria-hidden="true"><use href="#i-shield"/></svg><div><h4>Regulatory Holding &amp; Market Entry</h4><p>For international manufacturers entering Mexico, we provide regulatory structure, COFEPRIS compliance management, and a commercialization framework — so products reach the market without the institutional friction of building from scratch.</p></div></li>
-          <li class="svc reveal"><svg class="svc__icon" aria-hidden="true"><use href="#i-star"/></svg><div><h4>Selective Distribution</h4><p>We represent a curated portfolio of medical technology brands where we can guarantee proper deployment, clinical support, and market positioning. We don’t list products. We operate them.</p></div></li>
-        </ul>
-      </div>
-      <div class="svc-group">
-        <h3 class="svc-group__title reveal">Strategic &amp; Financial Partnerships</h3>
-        <ul class="svc-list">
-          <li class="svc reveal"><svg class="svc__icon" aria-hidden="true"><use href="#i-globe"/></svg><div><h4>Brand Integration Model</h4><p>Technology manufacturers who want their products correctly deployed in Mexican institutions — not just sold — work with BKM to manage the clinical, operational, and commercial execution layer. You focus on innovation. We make sure it works in the field.</p></div></li>
-          <li class="svc reveal"><svg class="svc__icon" aria-hidden="true"><use href="#i-handshake"/></svg><div><h4>Project Financing &amp; Structured Partnerships</h4><p>For projects that require capital structure, co-investment models, or long-term financial alliances, BKM builds the frameworks that make deployment feasible — connecting institutional needs with investment models designed for healthcare.</p></div></li>
-        </ul>
-      </div>
+    <!-- service lines -->
+    <div class="lines">
+      <article class="line-card reveal">
+        <figure class="line-card__img"><img src="assets/office-workspace.jpg" alt="" loading="lazy" width="1600" height="900"></figure>
+        <div class="line-card__body">
+          <h3>Execution &amp; <span class="gold-text">Project Delivery</span></h3>
+          <ul>
+            <li><a href="#svc-turnkey">Turnkey Project Execution</a></li>
+            <li><a href="#svc-lifecycle">Medical Technology Lifecycle Management</a></li>
+            <li><a href="#svc-digital">Digital Health &amp; AI Solutions</a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="line-card reveal">
+        <figure class="line-card__img"><img src="assets/office-corridor.jpg" alt="" loading="lazy" width="1600" height="900"></figure>
+        <div class="line-card__body">
+          <h3>Market Access &amp; <span class="gold-text">Commercialization</span></h3>
+          <ul>
+            <li><a href="#svc-regulatory">Regulatory Holding &amp; Market Entry</a></li>
+            <li><a href="#svc-distribution">Selective Distribution</a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="line-card reveal">
+        <figure class="line-card__img"><img src="assets/office-executive.jpg" alt="" loading="lazy" width="1600" height="900"></figure>
+        <div class="line-card__body">
+          <h3>Strategic &amp; <span class="gold-text">Financial Partnerships</span></h3>
+          <ul>
+            <li><a href="#svc-brand">Brand Integration Model</a></li>
+            <li><a href="#svc-financing">Project Financing &amp; Structured Partnerships</a></li>
+          </ul>
+        </div>
+      </article>
     </div>
 
-    <p class="band reveal">Flexible solutions designed to adapt to each <span class="gold-text">stage of healthcare project development.</span></p>
+    <!-- service detail -->
+    <div class="svc-grid">
+      <article class="svc-card reveal" id="svc-turnkey">
+        <div class="svc-card__head"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-key"/></svg></span><h4>Turnkey Project Execution</h4></div>
+        <p>We take a project from concept to operational reality. That means structuring, procurement, installation, clinical commissioning, and handover – managed as a single end-to-end responsibility. You don’t coordinate multiple vendors. You coordinate BKM.</p>
+        <span class="svc-card__tag">Execution &amp; Project Delivery</span>
+      </article>
+      <article class="svc-card reveal" id="svc-lifecycle">
+        <div class="svc-card__head"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-wrench"/></svg></span><h4>Medical Technology Lifecycle Management</h4></div>
+        <p>After deployment, the work continues. We provide scheduled maintenance, corrective service, spare parts access, and performance tracking for the equipment we deploy, so institutions aren’t left managing complex technology alone.</p>
+        <span class="svc-card__tag">Execution &amp; Project Delivery</span>
+      </article>
+      <article class="svc-card reveal" id="svc-digital">
+        <div class="svc-card__head"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-pulse"/></svg></span><h4>Digital Health &amp; AI Solutions</h4></div>
+        <p>Design and deployment of clinical software, AI-assisted diagnostic platforms, and integrated health information systems — built for Mexico’s institutional environment and regulatory framework.</p>
+        <span class="svc-card__tag">Execution &amp; Project Delivery</span>
+      </article>
+      <article class="svc-card reveal" id="svc-regulatory">
+        <div class="svc-card__head"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-shield"/></svg></span><h4>Regulatory Holding &amp; Market Entry</h4></div>
+        <p>For international manufacturers entering Mexico, we provide regulatory structure, COFEPRIS compliance management, and a commercialization framework — so products reach the market without the institutional friction of building from scratch.</p>
+        <span class="svc-card__tag">Market Access &amp; Commercialization</span>
+      </article>
+      <article class="svc-card reveal" id="svc-distribution">
+        <div class="svc-card__head"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-star"/></svg></span><h4>Selective Distribution</h4></div>
+        <p>We represent a curated portfolio of medical technology brands where we can guarantee proper deployment, clinical support, and market positioning. We don’t list products. We operate them.</p>
+        <span class="svc-card__tag">Market Access &amp; Commercialization</span>
+      </article>
+      <article class="svc-card reveal" id="svc-brand">
+        <div class="svc-card__head"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-globe"/></svg></span><h4>Brand Integration Model</h4></div>
+        <p>Technology manufacturers who want their products correctly deployed in Mexican institutions — not just sold — work with BKM to manage the clinical, operational, and commercial execution layer. You focus on innovation. We make sure it works in the field.</p>
+        <span class="svc-card__tag">Strategic &amp; Financial Partnerships</span>
+      </article>
+      <article class="svc-card reveal" id="svc-financing">
+        <div class="svc-card__head"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-handshake"/></svg></span><h4>Project Financing &amp; Structured Partnerships</h4></div>
+        <p>For projects that require capital structure, co-investment models, or long-term financial alliances, BKM builds the frameworks that make deployment feasible — connecting institutional needs with investment models designed for healthcare.</p>
+        <span class="svc-card__tag">Strategic &amp; Financial Partnerships</span>
+      </article>
+      <article class="svc-card svc-card--note reveal">
+        <p class="svc-card__note">Flexible solutions designed to adapt to each <span class="gold-text">stage of healthcare project development.</span></p>
+        <a class="btn btn--gold" href="#contact">Tell us about your project <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
 
+    <!-- clinical verticals -->
     <div class="verticals">
       <header class="verticals__head reveal">
         <h3 class="h3">We operate across the clinical areas <em>where complexity is highest.</em></h3>
         <p>BKM deploys medical technology solutions across six key verticals:</p>
       </header>
       <ul class="verticals__grid">
-        <li class="vertical reveal"><svg aria-hidden="true"><use href="#i-scan"/></svg><h4>Imaging &amp; Diagnostics</h4><p>MRI, CT, ultrasound, and digital radiology systems.</p></li>
-        <li class="vertical reveal"><svg aria-hidden="true"><use href="#i-scalpel"/></svg><h4>Operating Room &amp; Surgery</h4><p>Advanced surgical technologies, robotics, and visualization systems.</p></li>
-        <li class="vertical reveal"><svg aria-hidden="true"><use href="#i-heart"/></svg><h4>Intensive Care</h4><p>Ventilators, monitoring systems, infusion pumps, and life support.</p></li>
-        <li class="vertical reveal"><svg aria-hidden="true"><use href="#i-cross"/></svg><h4>Transplants &amp; Specialized Care</h4><p>Technology and services for complex procedures.</p></li>
-        <li class="vertical reveal"><svg aria-hidden="true"><use href="#i-chip"/></svg><h4>Digital Health, AI &amp; SaaS</h4><p>Telemedicine, assisted diagnostics, and clinical platforms, including InsureMed.</p></li>
-        <li class="vertical reveal"><svg aria-hidden="true"><use href="#i-building"/></svg><h4>Hospital Infrastructure</h4><p>Energy systems, medical gases, and integrated hospital equipment.</p></li>
+        <li class="vertical reveal"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-scan"/></svg></span><div><h4>Imaging &amp; Diagnostics</h4><p>MRI, CT, ultrasound, and digital radiology systems.</p></div></li>
+        <li class="vertical reveal"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-scalpel"/></svg></span><div><h4>Operating Room &amp; Surgery</h4><p>Advanced surgical technologies, robotics, and visualization systems.</p></div></li>
+        <li class="vertical reveal"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-heart"/></svg></span><div><h4>Intensive Care</h4><p>Ventilators, monitoring systems, infusion pumps, and life support.</p></div></li>
+        <li class="vertical reveal"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-cross"/></svg></span><div><h4>Transplants &amp; Specialized Care</h4><p>Technology and services for complex procedures.</p></div></li>
+        <li class="vertical reveal"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-chip"/></svg></span><div><h4>Digital Health, AI &amp; SaaS</h4><p>Telemedicine, assisted diagnostics, and clinical platforms, including InsureMed.</p></div></li>
+        <li class="vertical reveal"><span class="icon-ring"><svg aria-hidden="true"><use href="#i-building"/></svg></span><div><h4>Hospital Infrastructure</h4><p>Energy systems, medical gases, and integrated hospital equipment.</p></div></li>
       </ul>
       <p class="verticals__foot reveal">Within these verticals, we have the structure, the teams, and the experience to move fast.</p>
     </div>
 
     <div class="fit reveal">
-      <div>
-        <p class="fit__title">Not sure which model fits your situation?</p>
-        <p>We’ll tell you honestly whether we’re the right fit and what the project would actually require.</p>
-      </div>
+      <p class="fit__title">Not sure which model <span class="gold-text">fits your situation?</span></p>
+      <p>We’ll tell you honestly whether we’re the right fit and what the project would actually require.</p>
       <a class="btn btn--gold" href="#contact">Schedule a meeting <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
   </div>
